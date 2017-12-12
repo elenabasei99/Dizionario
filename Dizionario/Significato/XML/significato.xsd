@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0">
+  <xsd:element name="WordDefinition">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="Word" type="xsd:string"/>
+        <xsd:element name="Definitions">
+          <xsd:complexType>
+            <xsd:sequence>
+              <xsd:element name="Definition">
+                <xsd:complexType>
+                  <xsd:sequence>
+                    <xsd:element name="Word" type="xsd:string"/>
+                    <xsd:element name="Dictionary">
+                      <xsd:complexType>
+                        <xsd:sequence>
+                          <xsd:element name="Id" type="xsd:string"/>
+                          <xsd:element name="Name" type="xsd:string"/>
+                        </xsd:sequence>
+                      </xsd:complexType>
+                    </xsd:element>
+                    <xsd:element name="WordDefinition" type="xsd:string"/>
+                  </xsd:sequence>
+                </xsd:complexType>
+              </xsd:element>
+            </xsd:sequence>
+          </xsd:complexType>
+        </xsd:element>
+      </xsd:sequence>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
