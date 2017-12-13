@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0">
+  <xsd:element name="Translation">
+    <xsd:complexType>
+      <xsd:sequence>
+        <xsd:element name="text" type="xsd:string"/>
+      </xsd:sequence>
+      <xsd:attribute name="code" type="xsd:int"/>
+      <xsd:attribute name="lang" type="xsd:string"/>
+    </xsd:complexType>
+  </xsd:element>
+</xsd:schema>
