@@ -102,4 +102,44 @@ public class Finestra extends JFrame {
 		btnTraduci.setBounds(120, 314, 89, 23);
 		contentPane.add(btnTraduci);
 	}
+
+	public JComboBox getComboBox() {
+		return comboBox;
+	}
+
+	public void setComboBox(JComboBox comboBox) {
+		this.comboBox = comboBox;
+	}
+
+	public JTextField getTextField() {
+		return textField;
+	}
+
+	public void setTextField(JTextField textField) {
+		this.textField = textField;
+	}
+
+	public JComboBox getComboBox_1() {
+		return comboBox_1;
+	}
+
+	public void setComboBox_1(JComboBox comboBox_1) {
+		this.comboBox_1 = comboBox_1;
+	}
+
+	public JLabel getLblParolaTradotta() {
+		return lblParolaTradotta;
+	}
+
+	public void setLblParolaTradotta(JLabel lblParolaTradotta) {
+		this.lblParolaTradotta = lblParolaTradotta;
+	}
+
+	public JButton getBtnTraduci() {
+		return btnTraduci;
+	}
+
+	public void setBtnTraduci(JButton btnTraduci) {
+		this.btnTraduci = btnTraduci;
+	}
 }

@@ -1,5 +1,11 @@
 package MODEL;
 
-public class Gestione {
+import VIEW.Finestra;
 
+public class Gestione {
+	private Finestra f;
+
+	public Gestione(Finestra f) {
+		this.f = f;
+	}
 }
