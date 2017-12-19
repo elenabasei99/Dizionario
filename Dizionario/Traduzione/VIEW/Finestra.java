@@ -28,6 +28,8 @@ public class Finestra extends JFrame {
 	private JLabel lblTraduzione;
 	private JLabel lblParolaTradotta;
 	private JButton btnTraduci;
+	private JLabel lblGIF;
+	private JButton btnPassaADizionario;
 
 	/**
 	 * Launch the application.
@@ -99,8 +101,32 @@ public class Finestra extends JFrame {
 		contentPane.add(lblParolaTradotta);
 		
 		btnTraduci = new JButton("Traduci");
-		btnTraduci.setBounds(120, 314, 89, 23);
+		btnTraduci.setBounds(120, 314, 89, 43);
 		contentPane.add(btnTraduci);
+		
+		lblGIF = new JLabel("");
+		lblGIF.setBounds(353, 124, 207, 128);
+		contentPane.add(lblGIF);
+		
+		btnPassaADizionario = new JButton("Passa a dizionario");
+		btnPassaADizionario.setBounds(353, 314, 169, 43);
+		contentPane.add(btnPassaADizionario);
+	}
+
+	public JLabel getLblGIF() {
+		return lblGIF;
+	}
+
+	public void setLblGIF(JLabel lblGIF) {
+		this.lblGIF = lblGIF;
+	}
+
+	public JButton getBtnPassaADizionario() {
+		return btnPassaADizionario;
+	}
+
+	public void setBtnPassaADizionario(JButton btnPassaADizionario) {
+		this.btnPassaADizionario = btnPassaADizionario;
 	}
 
 	public JComboBox getComboBox() {
