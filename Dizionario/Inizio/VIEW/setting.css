@@ -1,0 +1,9 @@
+.pane{
+	-fx-background-image: url("lettere.png");
+	-fx-background-size: 400 226;
+	-fx-background-position: center center;
+}
+
+Button{
+	-fx-background-color:  rgba(255, 255, 255, 0);
+}

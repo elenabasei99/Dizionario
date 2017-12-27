@@ -9,24 +9,40 @@ import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
 import CONTROL.Control;
+import CONTROL.ControlIntro;
 import MODEL.Gestione;
 import VIEW.Finestra;
 import generated.Translation;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
-public class mainT {
+public class mainT extends Application{
 
-	public static void main(String[] args) throws MalformedURLException, JAXBException {
-		URL url = new URL("https://translate.yandex.net/api/v1.5/tr/translate?key=trnsl.1.1.20171212T105937Z.064bd563238b831f.cc0e13f6cf93f48630c839bedb85b3ff7d8dfcc7&text=germania&lang=it-de");
-		JAXBContext jaxbContext = JAXBContext.newInstance(Translation.class);
-		Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
-		Translation t = (Translation) jaxbUnmarshaller.unmarshal(url);
-		Finestra f = new Finestra();
-		f.setVisible(true);
-		Gestione g = new Gestione(f);
-		Control c = new Control(f,g);
-		
-		System.out.println(t.getText());
-		//prova
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		// TODO Auto-generated method stub
+		try {
+			AnchorPane root=null;
+			
+			Control c=new Control();
+			
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/VIEW/FinestraT.fxml"));
+			fxmlLoader.setRoot(root);
+			fxmlLoader.setController(c);
+			root=fxmlLoader.load();
+			
+			c.setRoot(primaryStage, root);
+			
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("/VIEW/style.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }
