@@ -20,7 +20,6 @@ import com.sun.speech.freetts.VoiceManager;
 
 import MAIN.MainP;
 import MAIN.mainT;
-import MODEL.Gestione;
 import VIEW.Finestra;
 import generated.Translation;
 import javafx.beans.InvalidationListener;
@@ -33,7 +32,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class Control implements Initializable {
+public class ControlT implements Initializable {
 	private Stage stage;
 	private AnchorPane root;
 	private ComboBox<String> comboBox1 = new ComboBox<String>();
@@ -47,12 +46,12 @@ public class Control implements Initializable {
 		comboBox1.setItems(getLista());
 		comboBox1.setPrefWidth(150);
 		comboBox1.setPrefHeight(25);
-		comboBox1.setLayoutX(265);
+		comboBox1.setLayoutX(292);
 		comboBox1.setLayoutY(144);
 
 		comboBox2.setPrefWidth(150);
 		comboBox2.setPrefHeight(25);
-		comboBox2.setLayoutX(265);
+		comboBox2.setLayoutX(292);
 		comboBox2.setLayoutY(185);
 
 		comboBox1.setOnAction((event) -> {
@@ -142,8 +141,7 @@ public class Control implements Initializable {
 		
 		try {
 			voice.speak(((TextField) root.getChildren().get(6)).getText());
-		}
-		catch (Exception e) {
+		}catch (Exception e) {
 			// TODO: handle exception
 		}
 	}

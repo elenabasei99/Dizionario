@@ -8,9 +8,8 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 
-import CONTROL.Control;
+import CONTROL.ControlT;
 import CONTROL.ControlIntro;
-import MODEL.Gestione;
 import VIEW.Finestra;
 import generated.Translation;
 import javafx.application.Application;
@@ -27,7 +26,7 @@ public class mainT extends Application{
 		try {
 			AnchorPane root=null;
 			
-			Control c=new Control();
+			ControlT c=new ControlT();
 			
 			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/VIEW/FinestraT.fxml"));
 			fxmlLoader.setRoot(root);

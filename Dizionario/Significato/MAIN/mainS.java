@@ -7,21 +7,23 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Unmarshaller;
-
 import org.jdom2.Document;
 import org.jdom2.Element;
 import org.jdom2.JDOMException;
 import org.jdom2.Namespace;
 import org.jdom2.input.SAXBuilder;
 
+import CONTROL.ControlS;
 import generated.WordDefinition;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
 
-public class main {
+public class mainS extends Application{
 
-	public static void main(String[] args) throws JAXBException, JDOMException, IOException {
+	/*public static void main(String[] args) throws JAXBException, JDOMException, IOException {
 		URL f = new URL("http://services.aonaware.com/DictService/DictService.asmx/Define?word=beach");
 		
 		SAXBuilder builder = new SAXBuilder();
@@ -37,6 +39,30 @@ public class main {
 		
 		System.out.println(rootNode.getChild("Definitions",ns).getChildren("Definition",ns).get(1).getChildText("WordDefinition",ns));
 
+	}*/
+	
+	@Override
+	public void start(Stage primaryStage) throws Exception {
+		// TODO Auto-generated method stub
+		try {
+			AnchorPane root=null;
+			
+			ControlS c=new ControlS();
+			
+			FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/VIEW/FinestraS.fxml"));
+			fxmlLoader.setRoot(root);
+			fxmlLoader.setController(c);
+			root=fxmlLoader.load();
+			
+			c.setRoot(primaryStage, root);
+			
+			Scene scene = new Scene(root);
+			scene.getStylesheets().add(getClass().getResource("/VIEW/styleS.css").toExternalForm());
+			primaryStage.setScene(scene);
+			primaryStage.show();
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 }

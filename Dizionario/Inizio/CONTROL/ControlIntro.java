@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import MAIN.mainS;
 import MAIN.mainT;
 import VIEW.Finestra;
 import javafx.event.ActionEvent;
@@ -31,8 +32,9 @@ public class ControlIntro implements Initializable{
 		m.start(root);
 	}
 	
-	public void showDictionary(ActionEvent event) {
-		root.close();
+	public void showDictionary(ActionEvent event) throws Exception {
+		mainS m=new mainS();
+		m.start(root);
 	}
 	
 	public void setRoot(Stage root) {

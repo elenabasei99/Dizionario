@@ -1,0 +1,5 @@
+.pane{
+	-fx-background-image: url("word4.png");
+	-fx-background-size: 485 386;
+	-fx-background-position: center center;
+}

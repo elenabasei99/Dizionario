@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="386.0" prefWidth="485.0" styleClass="pane" stylesheets="@styleS.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" layoutX="41.0" layoutY="12.0" prefHeight="51.0" prefWidth="398.0" text="DICTIONARY" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="41.0" />
+         </font></Label>
+      <Label layoutX="26.0" layoutY="95.0" prefHeight="41.0" prefWidth="253.0" text="Insert the term to search:">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Label>
+      <TextField fx:id="text1" layoutX="292.0" layoutY="103.0" />
+      <Button fx:id="btnTraduci" layoutX="70.0" layoutY="294.0" mnemonicParsing="false" onAction="#cerca" prefHeight="41.0" prefWidth="123.0" text="SEARCH">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMenu" layoutX="292.0" layoutY="294.0" mnemonicParsing="false" onAction="#tornaMenu" prefHeight="41.0" prefWidth="123.0" text="MENU'">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="39.0" layoutY="153.0" prefHeight="128.0" prefWidth="410.0" />
+   </children>
+</AnchorPane>
