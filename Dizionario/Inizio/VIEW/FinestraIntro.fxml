@@ -7,28 +7,19 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="226.0" prefWidth="400.0" styleClass="pane"
-	stylesheets="@setting.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+<AnchorPane prefHeight="226.0" prefWidth="400.0" styleClass="pane" stylesheets="@setting.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
 	<children>
-		<Label alignment="CENTER" layoutX="66.0" layoutY="14.0"
-			prefHeight="76.0" prefWidth="275.0" text="Cosa ti serve?" textFill="#eee567">
+		<Label alignment="CENTER" layoutX="66.0" layoutY="14.0" prefHeight="76.0" prefWidth="275.0" text="Cosa ti serve?" textFill="#eee567">
 			<font>
 				<Font name="Comic Sans MS Bold" size="38.0" />
 			</font>
 		</Label>
-		<Button layoutX="4.0" layoutY="105.0" mnemonicParsing="false"
-			prefHeight="76.0" prefWidth="196.0" stylesheets="@setting.css" text="TRADUTTORE"
-			textAlignment="CENTER" textFill="#c9be2c"
-			fx:id="btnTraduttore" onAction="#showTraduttore">
+		<Button fx:id="btnTraduttore" layoutX="4.0" layoutY="105.0" mnemonicParsing="false" onAction="#showTraduttore" prefHeight="76.0" prefWidth="196.0" stylesheets="@setting.css" text="TRADUTTORE" textAlignment="CENTER" textFill="#ffe900">
 			<font>
 				<Font name="Comic Sans MS Bold" size="23.0" />
 			</font>
 		</Button>
-		<Button layoutX="208.0" layoutY="105.0" mnemonicParsing="false"
-			prefHeight="76.0" prefWidth="189.0" stylesheets="@setting.css" text="DICTIONARY"
-			textFill="#c9be2c"
-			fx:id="btnDictionary" onAction="#showDictionary">
+		<Button fx:id="btnDictionary" layoutX="208.0" layoutY="105.0" mnemonicParsing="false" onAction="#showDictionary" prefHeight="76.0" prefWidth="189.0" stylesheets="@setting.css" text="DICTIONARY" textFill="#ffe900">
 			<font>
 				<Font name="Comic Sans MS Bold" size="23.0" />
 			</font>
