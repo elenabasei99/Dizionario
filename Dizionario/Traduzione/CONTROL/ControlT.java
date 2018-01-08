@@ -151,8 +151,8 @@ public class ControlT implements Initializable {
 			JOptionPane.showMessageDialog(null, "Non possono essere lasciati campi vuoti", "ERROR",
 					JOptionPane.ERROR_MESSAGE);
 			return false;
-		} else if (t.getText().indexOf(" ") != -1 || t.getText().indexOf("_") != -1) {
-			JOptionPane.showMessageDialog(null, "Non possono essere presenti spazzi", "ERROR",
+		} else if (t.getText().indexOf(" ") != -1 || t.getText().indexOf("_") != -1 || t.getText().indexOf("&") != -1 || t.getText().indexOf("-") != -1) {
+			JOptionPane.showMessageDialog(null, "Non possono essere presenti spazzi o caratteri speciali", "ERROR",
 					JOptionPane.ERROR_MESSAGE);
 			return false;
 		}
