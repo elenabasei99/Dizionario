@@ -3,3 +3,11 @@
 	-fx-background-size: 485 386;
 	-fx-background-position: center center;
 }
+
+.audio{
+	-fx-background-image: url("audio.png");
+	-fx-background-size: 47 41;
+	-fx-background-position: center center;
+	-fx-border-color:grey;
+	-fx-border-width:0.5px;
+}
