@@ -54,6 +54,10 @@ public class ControlS implements Initializable {
 				((TextArea) root.getChildren().get(5)).appendText(rootNode.getChild("Definitions", ns)
 						.getChildren("Definition", ns).get(i).getChildText("WordDefinition", ns));
 			}
+			
+			if(((TextArea) root.getChildren().get(5)).getText().equals("")) {
+				JOptionPane.showMessageDialog(null, "Term not found", "INFORMATION", JOptionPane.INFORMATION_MESSAGE);
+			}
 		}
 	}
 
