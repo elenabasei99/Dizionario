@@ -21,6 +21,9 @@ public class MainP extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		// TODO Auto-generated method stub
+		
+		System.setProperty("file.encoding", "UTF8");
+		
 		try {
 			AnchorPane root=null;
 			

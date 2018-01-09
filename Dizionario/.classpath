@@ -3,7 +3,11 @@
 	<classpathentry kind="src" path="Significato"/>
 	<classpathentry kind="src" path="Traduzione"/>
 	<classpathentry kind="src" path="Inizio"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
+		<accessrules>
+			<accessrule kind="accessible" pattern="javafx/**"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="lib" path="lib/jdom-2.0.2.jar"/>
 	<classpathentry kind="lib" path="lib/cmu_time_awb.jar"/>
 	<classpathentry kind="lib" path="lib/cmu_us_kal.jar"/>
