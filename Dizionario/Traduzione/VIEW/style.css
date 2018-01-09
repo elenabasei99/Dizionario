@@ -1,5 +1,5 @@
 .pane{
-	-fx-background-image: url("/VIEW/word3.png");
+	-fx-background-image: url("word3.png");
 	-fx-background-size: 485 386;
 	-fx-background-position: center center;
 }
